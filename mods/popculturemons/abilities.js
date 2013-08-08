@@ -34,5 +34,18 @@ exports.BattleAbilities = {
 		name: "Android Heart",
 		rating: 2,
 		num: 1001
+	},
+	"exterminate": {
+		desc: "When a Pokemon with Moxie faints another Pokemon, its SAttack rises by one stage.",
+		shortDesc: "This Pokemon's SAttack is boosted by 1 if it attacks and faints another Pokemon.",
+		onSourceFaint: function(target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({spa:1}, source);
+			}
+		},
+		id: "moxie",
+		name: "Moxie",
+		rating: 4,
+		num: 1002
 	}	
 };  
