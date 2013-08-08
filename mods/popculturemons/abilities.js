@@ -47,5 +47,18 @@ exports.BattleAbilities = {
 		name: "Moxie",
 		rating: 4,
 		num: 1002
+	},
+	"saiyansoul": {
+		desc: "When the user is poisoned, its Attack stat is raised by 50%.",
+		shortDesc: "When this Pokemon is poisoned, its physical attacks do 1.5x damage.",
+		onBasePower: function(basePower, attacker, defender, move) {
+			if ((attacker.status === 'brn' || attacker.status === 'frz') && move.category === 'Physical') {
+				return basePower * 1.5;
+			}
+		},
+		id: "saiyansoul",
+		name: "Saiyan Soul",
+		rating: 3,
+		num: 1003
 	}	
 };  
