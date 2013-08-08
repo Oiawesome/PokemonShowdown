@@ -2,7 +2,21 @@ exports.BattleFormats = {
 
 	// Singles
 	///////////////////////////////////////////////////////////////////
+	
+	sketchmons: {
+		name: "Sketchmons",
+		section: "Singles",
 
+                mod: 'sketchmons',
+		effectType: 'Format',
+		challengeDefault: true,
+		rated: true,
+		challengeShow: true,
+		searchShow: true,
+		isTeambuilderFormat: true,
+		ruleset: ['Pokemon', 'Standard', 'Evasion Abilities Clause', 'Team Preview'],
+		banlist: ['Uber', 'Drizzle ++ Swift Swim', 'Soul Dew']
+	},
 	popculturemons: {
 		name: "Pop Culture Mons",
 		section: "Pop Culture",
