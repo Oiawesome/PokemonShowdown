@@ -369,7 +369,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Saiyan"
 	},
-	"ameterasy": {
+	"ameterasu": {
 		num: 802,
 		accuracy: 85,
 		basePower: 120,
